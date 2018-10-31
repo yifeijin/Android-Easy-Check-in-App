@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.com.shepherd.RegisterActivity"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:id="@+id/register_email"
+            android:hint="@string/prompt_email"
+            android:layout_marginBottom="10dp"
+            android:background="#EEE"
+            android:padding="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/register_password"
+            android:hint="@string/prompt_password"
+            android:layout_marginBottom="20dp"
+            android:background="#EEE"
+            android:padding="10dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_button"
+            android:textAllCaps="true"
+            android:text="@string/action_register"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/to_signin_button"
+            android:text="@string/to_signin"
+            android:textAllCaps="false"
+            android:background="@null"
+            android:textColor="#222"/>
+    </LinearLayout>
+
+</LinearLayout>
